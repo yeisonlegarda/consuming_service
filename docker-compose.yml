@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+    expose:
+        - 72
+    ports:
+      - "72:8000"
+    environment:
+        - DB_USER=admin
+        - DB_PASS=HANrhz5u7e3jKqVQ
+        - DB_HOST=3.130.126.210
+        - DB_PORT=3309
+        - DB_NAME=habi_db
+    volumes:
+      - ./estate_api:/estate_api
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
