@@ -41,5 +41,7 @@ python manage.py test
 
 ### Modelo modificado
 
+![alt text](https://github.com/yeisonlegarda/habi_backend_test/blob/main/CambiosModelo.PNG?raw=true)
+
 
 
